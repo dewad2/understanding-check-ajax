@@ -8,7 +8,7 @@ app.use(volleyball);
 app.use(express.static(path.join(__dirname, '../public')));
 
 app.get('/dogs', (req, res, next) => {
-  res.send(data.dogs);
+  res.send(data.dogs)
 })
 
 app.get('/cats', (req, res, next) => {
