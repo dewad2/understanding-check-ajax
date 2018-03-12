@@ -31,28 +31,6 @@ if (location.hash.length) {
   .then(renderView)
   .catch(console.error);
 
-//   if (hash === 'dogs') {
-//     fetch('/dogs')
-//       .then(res => res.json())
-//       .then(renderView)
-//       .catch(console.error);
-//   }
-
-//   if (hash === 'cats') {
-//     fetch('/cats')
-//       .then(res => res.json())
-//       .then(renderView)
-//       .catch(console.error);
-//   }
-
-//   if (hash === 'dragons') {
-//     fetch('/dragons')
-//       .then(res => res.json())
-//       .then(renderView)
-//       .catch(console.error);
-//   }
-// }
-
 ['dragon', 'cat', 'dog'].forEach(animal => {
   const button = document.getElementById(`${animal}s`);
   button.addEventListener('click', () => {
